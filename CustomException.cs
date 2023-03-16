@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace IndianStatesCensusAnalyserProblem
 {
-    public class statecensusexception : Exception
+    public class CustomException : Exception
     {
-        public statecensusexception(string message) : base(message) { }
+        public CustomException(string message) : base(message) { }
 
     }
 }
