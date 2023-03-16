@@ -18,5 +18,18 @@ namespace IndianStatesCensusAnalyserProblemTest
             // Assert
             Assert.AreEqual(expectedNumberOfRecords, actualNumberOfRecords);
         }
+
+        //--------Tc-1.2-------//
+        [TestMethod]
+        public void LoadDataFromCSV_ShouldThrowException_WhenIncorrectFileIsProvided()
+        {
+            // Arrange
+            string filePath = "D:\\c#\\257\\IndianStatesCensusAnalyserProblem\\IndianStatesCensusAnalyserProblem\\StateCensus.csv";
+            StateCensusAnalyser analyser = new StateCensusAnalyser(filePath);
+            
+
+            
+            analyser.LoadDataFromCSV();
+        }
     }
 }
